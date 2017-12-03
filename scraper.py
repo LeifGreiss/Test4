@@ -26,5 +26,6 @@ def scrape_and_look_for_next_link(url):
     html = scraperwiki.scrape(url)
     print html
     root = lxml.html.fromstring(html)
+    scrape_table(root)
 starting_url = 'http://inmo.ie/6022'
 scrape_and_look_for_next_link(starting_url)
