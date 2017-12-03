@@ -13,8 +13,8 @@ def scrape_table(root):
             record['Date'] = table_cells[0].text
             record['Hospital'] = table_cells[1].text
             record['Region'] = table_cells[2].text
-            record['Trolley total'] = table_cells[4].text
-            record['Ward Total'] = table_cells[5].text
+            record['Trolley total'] = table_cells[3].text
+            record['Ward Total'] = table_cells[4].text
             # Print out the data we've gathered
             print record, '------------'
             # Finally, save the record to the datastore - 'Artist' is our unique key
