@@ -8,7 +8,7 @@ def scrape_table(root):
     for row in rows: # where do rows come from? 
         # Set up our data record 
         record = {}
-        table_cells = row.cssselect("p") #In the row use cssselect to select for td
+        table_cells = row.cssselect("p.ex1") #In the row use cssselect to select for td
         if table_cells: 
             record['Racecourse'] = table_cells[0].text_content
             record['Address and Phone Book'] = table_cells[1].text_content
