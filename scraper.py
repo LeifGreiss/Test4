@@ -10,8 +10,8 @@ def scrape_table(root):
         record = {}
         table_cells = row.cssselect("p") #In the row use cssselect to select for td
         if table_cells: 
-            record['Racecourse'] = table_cells[0].text
-            record['Address and Phone Book'] = table_cells[1].text
+            record['Racecourse'] = table_cells[0].text_content
+            record['Address and Phone Book'] = table_cells[1].text_content
             #record['Date'] = table_cells[0].text
             #record['Hospital'] = table_cells[1].text
             #record['Region'] = table_cells[2].text
